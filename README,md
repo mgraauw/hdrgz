@@ -1,0 +1,32 @@
+# Private repo for HDR
+
+Afgeleid van: 
+
+* https://decor.nictiz.nl/ada/modules/get-html.xquery?id=gz-izv-kwa-casus2&app=perinatologie-326
+* https://informatiestandaarden.nictiz.nl/wiki/MedMij:Vdraft_Integrale_Zwangerschapskaart_Raadplegen#Scenario_Vrouw_2.2C_Kaart_3_-_data_2e_lijn_.28meerling.29
+
+Resources uit deze git:
+* https://github.com/Nictiz/HL7-mappings/tree/GZ-326-dev/ada_2_fhir/peri/3.2.6/med_mij_uitbreiding_verloskunde_beschikbaarstellen/fhir_instance
+HL7-mappings/ada_2_fhir/peri/3.2.6/med_mij_uitbreiding_verloskunde_beschikbaarstellen/fhir_instance at GZ-326-dev · Nictiz/HL7-mappings
+Executable mappings between various HL7 formats. Contribute to Nictiz/HL7-mappings development by creating an account on GitHub.
+
+Daarna:
+* geconverteerd met Gofsh
+* samengesteld in instances.fsh
+* voorbeelden uitgekleed
+  * nictiz namespaces en extensions weg
+  * ook metadata etc.
+  * hier en daar aanpassingen nodig
+* Composition met de hand in FSH gemaakt
+* Sushi, validation
+* in dosomething.ipynb zit een bundle generator
+  * werkt op de json
+  * json bundle weer met gofsh terug converteren
+  * die in /input zetten
+* _genonce
+* dan narrative:
+  * narrative-generator
+  * werkt op xml bundle uit /output
+  * dan met de hand weer in section text in FSH zetten
+* _genonce again
+

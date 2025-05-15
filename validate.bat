@@ -1,0 +1,1 @@
+java -jar ..\..\validator_cli.jar .\fsh-generated\resources\Bundle-bundle-swart.json -version 4.0 -html-output validation.html -language nl -sct nl
