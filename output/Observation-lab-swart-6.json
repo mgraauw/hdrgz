@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Observation",
+  "id" : "lab-swart-6",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-6</b></p><a name=\"lab-swart-6\"> </a><a name=\"hclab-swart-6\"> </a><a name=\"lab-swart-6-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29893-5}\">HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 165815009}\">HIV not detected</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29893-5",
+      "display" : "HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "165815009",
+      "display" : "HIV not detected"
+    }]
+  }
+}

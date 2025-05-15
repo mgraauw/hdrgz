@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hdrgz.org/Observation/alcohol-swart> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "alcohol-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation alcohol-swart</b></p><a name=\"alcohol-swart\"> </a><a name=\"hcalcohol-swart\"> </a><a name=\"alcohol-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 228273003}\">Alcohol drinking behaviour</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 105542008}\">Current non-drinker of alcohol</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:228273003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "228273003" ] ;
+       fhir:display [ fhir:v "Alcohol drinking behaviour" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:105542008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "105542008" ] ;
+       fhir:display [ fhir:v "Current non-drinker of alcohol" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

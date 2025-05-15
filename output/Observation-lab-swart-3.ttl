@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hdrgz.org/Observation/lab-swart-3> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lab-swart-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-3</b></p><a name=\"lab-swart-3\"> </a><a name=\"hclab-swart-3\"> </a><a name=\"lab-swart-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 883-9}\">ABO group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 58460004}\">Blood group O</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:883-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "883-9" ] ;
+       fhir:display [ fhir:v "ABO group [Type] in Blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:58460004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58460004" ] ;
+       fhir:display [ fhir:v "Blood group O" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

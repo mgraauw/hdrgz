@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-swart-5"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-5</b></p><a name="lab-swart-5"> </a><a name="hclab-swart-5"> </a><a name="lab-swart-5-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 93846-4}">Hemoglobin [Moles/volume] in Venous blood</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: 7.3 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="93846-4"/>
+      <display value="Hemoglobin [Moles/volume] in Venous blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://example.org/Patient/patient-swart"/>
+    <display value="Fiona F XXX_Swart"/>
+  </subject>
+  <valueQuantity>
+    <value value="7.3"/>
+    <unit value="mmol/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,544 @@
+{
+  "date" : "Thu, 15 May, 2025 14:45:09 +0200",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\fsh-generated\\resources\\ImplementationGuide-hdrgz.json",
+      "size" : 3923,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 935
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 7165
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 91
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 102
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 72,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-bundle-swart.json",
+      "size" : 26835,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 46
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 410
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 1402
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 121
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-composition-swart.json",
+      "size" : 6678,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-condition-growth.json",
+      "size" : 554,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-condition-meerling.json",
+      "size" : 572,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-ziekenhuisopname-swart.json",
+      "size" : 887,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-alcohol-swart.json",
+      "size" : 607,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-bloeddruk-swart.json",
+      "size" : 1677,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-gewicht-swart.json",
+      "size" : 738,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-lab-swart-3.json",
+      "size" : 539,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-lab-swart-4.json",
+      "size" : 539,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-lab-swart-5.json",
+      "size" : 509,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-lab-swart-6.json",
+      "size" : 573,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 23
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-levenvoelen-swart.json",
+      "size" : 754,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 19
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-tobacco-swart.json",
+      "size" : 1545,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-organization-sophia.json",
+      "size" : 1447,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-swart.json",
+      "size" : 1915,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Procedure-sectio-swart.json",
+      "size" : 646,
+      "processes" : [
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 14
+        }
+      ]
+    }
+  ]
+}

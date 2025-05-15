@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="sectio-swart"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure sectio-swart</b></p><a name="sectio-swart"> </a><a name="hcsectio-swart"> </a><a name="sectio-swart-en-US"> </a><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 386637004}">Obstetric procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 11466000}">Cesarean section</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>performed</b>: 2025-02-10 10:03:00+0200 --&gt; 2025-02-10 11:48:00+0200</p></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="386637004"/>
+      <display value="Obstetric procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11466000"/>
+      <display value="Cesarean section"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://example.org/Patient/patient-swart"/>
+    <display value="Fiona F XXX_Swart"/>
+  </subject>
+  <performedPeriod>
+    <start value="2025-02-10T10:03:00+02:00"/>
+    <end value="2025-02-10T11:48:00+02:00"/>
+  </performedPeriod>
+</Procedure>

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "sectio-swart",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure sectio-swart</b></p><a name=\"sectio-swart\"> </a><a name=\"hcsectio-swart\"> </a><a name=\"sectio-swart-en-US\"> </a><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 386637004}\">Obstetric procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11466000}\">Cesarean section</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>performed</b>: 2025-02-10 10:03:00+0200 --&gt; 2025-02-10 11:48:00+0200</p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "386637004",
+      "display" : "Obstetric procedure"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11466000",
+      "display" : "Cesarean section"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "performedPeriod" : {
+    "start" : "2025-02-10T10:03:00+02:00",
+    "end" : "2025-02-10T11:48:00+02:00"
+  }
+}

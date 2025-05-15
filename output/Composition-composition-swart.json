@@ -1,0 +1,172 @@
+{
+  "resourceType" : "Composition",
+  "id" : "composition-swart",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-swart</b></p><a name=\"composition-swart\"> </a><a name=\"hccomposition-swart\"> </a><a name=\"composition-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Hospital Discharge summary</span></p><p><b>encounter</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Encounter/ziekenhuisopname-swart\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>date</b>: 2023-11-01 10:18:13+0000</p><p><b>author</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Organization/organization-sophia\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>title</b>: Hospital Discharge summary</p><p><b>confidentiality</b>: normal</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "34105-7",
+      "display" : "Hospital Discharge summary"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart"
+  },
+  "encounter" : {
+    "reference" : "http://example.org/Encounter/ziekenhuisopname-swart"
+  },
+  "date" : "2023-11-01T10:18:13.947+00:00",
+  "author" : [{
+    "reference" : "http://example.org/Organization/organization-sophia"
+  }],
+  "title" : "Hospital Discharge summary",
+  "confidentiality" : "N",
+  "section" : [{
+    "title" : "Admission evaluation",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "67851-6",
+        "display" : "Admission evaluation note"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was admitted to the hospital for a planned cesarean section.</div>"
+    },
+    "section" : [{
+      "title" : "Vital signs",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8716-3",
+          "display" : "Vital signs"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Body weight</td><td>63 kg</td></tr><tr><td>Blood pressure panel with all children optional</td><td/></tr><tr><td>Systolic blood pressure</td><td>120 mmHg</td></tr><tr><td>Diastolic blood pressure</td><td>70 mmHg</td></tr><tr><td>Pattern of fetal movement</td><td>Fetal movements present</td></tr></table></div>"
+      },
+      "entry" : [{
+        "reference" : "http://example.org/Observation/gewicht-swart",
+        "display" : "63 kg"
+      },
+      {
+        "reference" : "http://example.org/Observation/bloeddruk-swart",
+        "display" : "70/120 mmHg"
+      },
+      {
+        "reference" : "http://example.org/Observation/levenvoelen-swart",
+        "display" : "foetale bewegingen aanwezig"
+      }]
+    },
+    {
+      "title" : "Social history",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29762-2",
+          "display" : "Social history Narrative"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Alcohol drinking behaviour</td><td>Current non-drinker of alcohol</td></tr><tr><td>Finding of tobacco use and exposure (finding)</td><td>Occasional cigarette smoker</td></tr><tr><td>Type of tobacco used (observable entity)</td><td>Electronic cigarette user</td></tr><tr><td>Tobacco smoking consumption (observable entity)</td><td>6 keer per dag inhaleren</td></tr></table></div>"
+      },
+      "entry" : [{
+        "reference" : "http://example.org/Observation/alcohol-swart",
+        "display" : "does not drink alcohol"
+      },
+      {
+        "reference" : "http://example.org/Observation/tobacco-swart",
+        "display" : "smokes occasionally cigarettes"
+      }]
+    },
+    {
+      "title" : "Significant procedures",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "10185-7",
+          "display" : "Hospital discharge procedures Narrative"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Obstetric procedure</td><td>Cesarean section</td></tr></table></div>"
+      },
+      "entry" : [{
+        "reference" : "http://example.org/Procedure/sectio-swart",
+        "display" : "planned primary sectio caesarea"
+      }]
+    }]
+  },
+  {
+    "title" : "Problem List",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11450-4",
+        "display" : "Problem list - Reported"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Monochorionic diamniotic twin pregnancy</td><td>resolved</td></tr><tr><td>Fetal growth restriction</td><td>resolved</td></tr></table></div>"
+    },
+    "entry" : [{
+      "reference" : "http://example.org/Condition/condition-meerling"
+    },
+    {
+      "reference" : "http://example.org/Condition/condition-growth"
+    }]
+  },
+  {
+    "title" : "Results",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "30954-2",
+        "display" : "Relevant diagnostic tests/laboratory data Narrative"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>ABO group [Type] in Blood</td><td>Blood group O</td></tr><tr><td>D Ag [Presence] in Blood</td><td>RhD positive</td></tr><tr><td>Hemoglobin [Moles/volume] in Venous blood</td><td>7.3 mmol/L</td></tr><tr><td>HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</td><td>HIV not detected</td></tr></table></div>"
+    },
+    "entry" : [{
+      "reference" : "http://example.org/Observation/lab-swart-3",
+      "display" : "ABO group"
+    },
+    {
+      "reference" : "http://example.org/Observation/lab-swart-4",
+      "display" : "Rh D factor"
+    },
+    {
+      "reference" : "http://example.org/Observation/lab-swart-5",
+      "display" : "hemoglobin"
+    },
+    {
+      "reference" : "http://example.org/Observation/lab-swart-6",
+      "display" : "HIV 1 As"
+    }]
+  },
+  {
+    "title" : "Discharge details",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8650-4",
+        "display" : "Hospital discharge disposition Narrative"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was discharged after cesarean section with healthy twin.</div>"
+    }
+  }]
+}

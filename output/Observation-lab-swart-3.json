@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Observation",
+  "id" : "lab-swart-3",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-3</b></p><a name=\"lab-swart-3\"> </a><a name=\"hclab-swart-3\"> </a><a name=\"lab-swart-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 883-9}\">ABO group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 58460004}\">Blood group O</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "883-9",
+      "display" : "ABO group [Type] in Blood"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "58460004",
+      "display" : "Blood group O"
+    }]
+  }
+}

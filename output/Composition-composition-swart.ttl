@@ -1,0 +1,194 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hdrgz.org/Composition/composition-swart> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composition-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-swart</b></p><a name=\"composition-swart\"> </a><a name=\"hccomposition-swart\"> </a><a name=\"composition-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Hospital Discharge summary</span></p><p><b>encounter</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Encounter/ziekenhuisopname-swart\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>date</b>: 2023-11-01 10:18:13+0000</p><p><b>author</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Organization/organization-sophia\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>title</b>: Hospital Discharge summary</p><p><b>confidentiality</b>: normal</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:34105-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "34105-7" ] ;
+       fhir:display [ fhir:v "Hospital Discharge summary" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/ziekenhuisopname-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Encounter/ziekenhuisopname-swart" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-11-01T10:18:13.947+00:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://example.org/Organization/organization-sophia> ;
+     fhir:reference [ fhir:v "http://example.org/Organization/organization-sophia" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Hospital Discharge summary"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Admission evaluation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:67851-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "67851-6" ] ;
+         fhir:display [ fhir:v "Admission evaluation note" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was admitted to the hospital for a planned cesarean section.</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:section ( [
+       fhir:title [ fhir:v "Vital signs" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:8716-3 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "8716-3" ] ;
+           fhir:display [ fhir:v "Vital signs" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Body weight</td><td>63 kg</td></tr><tr><td>Blood pressure panel with all children optional</td><td/></tr><tr><td>Systolic blood pressure</td><td>120 mmHg</td></tr><tr><td>Diastolic blood pressure</td><td>70 mmHg</td></tr><tr><td>Pattern of fetal movement</td><td>Fetal movements present</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/gewicht-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/gewicht-swart" ] ;
+         fhir:display [ fhir:v "63 kg" ]
+       ] [
+         fhir:link <http://example.org/Observation/bloeddruk-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/bloeddruk-swart" ] ;
+         fhir:display [ fhir:v "70/120 mmHg" ]
+       ] [
+         fhir:link <http://example.org/Observation/levenvoelen-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/levenvoelen-swart" ] ;
+         fhir:display [ fhir:v "foetale bewegingen aanwezig" ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "Social history" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:29762-2 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "29762-2" ] ;
+           fhir:display [ fhir:v "Social history Narrative" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Alcohol drinking behaviour</td><td>Current non-drinker of alcohol</td></tr><tr><td>Finding of tobacco use and exposure (finding)</td><td>Occasional cigarette smoker</td></tr><tr><td>Type of tobacco used (observable entity)</td><td>Electronic cigarette user</td></tr><tr><td>Tobacco smoking consumption (observable entity)</td><td>6 keer per dag inhaleren</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/alcohol-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/alcohol-swart" ] ;
+         fhir:display [ fhir:v "does not drink alcohol" ]
+       ] [
+         fhir:link <http://example.org/Observation/tobacco-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/tobacco-swart" ] ;
+         fhir:display [ fhir:v "smokes occasionally cigarettes" ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "Significant procedures" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:10185-7 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "10185-7" ] ;
+           fhir:display [ fhir:v "Hospital discharge procedures Narrative" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Obstetric procedure</td><td>Cesarean section</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Procedure/sectio-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Procedure/sectio-swart" ] ;
+         fhir:display [ fhir:v "planned primary sectio caesarea" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list - Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Monochorionic diamniotic twin pregnancy</td><td>resolved</td></tr><tr><td>Fetal growth restriction</td><td>resolved</td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Condition/condition-meerling> ;
+       fhir:reference [ fhir:v "http://example.org/Condition/condition-meerling" ]
+     ] [
+       fhir:link <http://example.org/Condition/condition-growth> ;
+       fhir:reference [ fhir:v "http://example.org/Condition/condition-growth" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Results" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:30954-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "30954-2" ] ;
+         fhir:display [ fhir:v "Relevant diagnostic tests/laboratory data Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>ABO group [Type] in Blood</td><td>Blood group O</td></tr><tr><td>D Ag [Presence] in Blood</td><td>RhD positive</td></tr><tr><td>Hemoglobin [Moles/volume] in Venous blood</td><td>7.3 mmol/L</td></tr><tr><td>HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</td><td>HIV not detected</td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Observation/lab-swart-3> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-3" ] ;
+       fhir:display [ fhir:v "ABO group" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-4> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-4" ] ;
+       fhir:display [ fhir:v "Rh D factor" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-5> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-5" ] ;
+       fhir:display [ fhir:v "hemoglobin" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-6> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-6" ] ;
+       fhir:display [ fhir:v "HIV 1 As" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Discharge details" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8650-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8650-4" ] ;
+         fhir:display [ fhir:v "Hospital discharge disposition Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was discharged after cesarean section with healthy twin.</div>"^^rdf:XMLLiteral
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

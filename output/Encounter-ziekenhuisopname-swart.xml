@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="ziekenhuisopname-swart"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter ziekenhuisopname-swart</b></p><a name="ziekenhuisopname-swart"> </a><a name="hcziekenhuisopname-swart"> </a><a name="ziekenhuisopname-swart-en-US"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] IMP: IMP</p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>period</b>: 2025-02-08 10:00:00+0000 --&gt; 2025-02-12 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 65147003}">Twin pregnancy</span></p><p><b>reasonReference</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling">Twin pregnancy</a></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling">monochoriale diamniotische tweelingzwangerschap</a></td></tr></table></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <code value="IMP"/>
+  </class>
+  <subject>
+    <reference value="http://example.org/Patient/patient-swart"/>
+    <display value="Fiona F XXX_Swart"/>
+  </subject>
+  <period>
+    <start value="2025-02-08T10:00:00+00:00"/>
+    <end value="2025-02-12T12:00:00+00:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="65147003"/>
+      <display value="Twin pregnancy"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="http://example.org/Condition/condition-meerling"/>
+    <display value="Twin pregnancy"/>
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="http://example.org/Condition/condition-meerling"/>
+      <display value="monochoriale diamniotische tweelingzwangerschap"/>
+    </condition>
+  </diagnosis>
+</Encounter>

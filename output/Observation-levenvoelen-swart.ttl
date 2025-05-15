@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hdrgz.org/Observation/levenvoelen-swart> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "levenvoelen-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation levenvoelen-swart</b></p><a name=\"levenvoelen-swart\"> </a><a name=\"hclevenvoelen-swart\"> </a><a name=\"levenvoelen-swart-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6</code>/38e436bf-6b35-11ec-2213-020000000000</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364618000}\">Pattern of fetal movement</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 289431008}\">Fetal movements present</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "38e436bf-6b35-11ec-2213-020000000000" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:364618000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "364618000" ] ;
+       fhir:display [ fhir:v "Pattern of fetal movement" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:289431008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "289431008" ] ;
+       fhir:display [ fhir:v "Fetal movements present" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

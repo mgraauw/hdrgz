@@ -1,0 +1,59 @@
+{
+  "resourceType" : "Observation",
+  "id" : "tobacco-swart",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation tobacco-swart</b></p><a name=\"tobacco-swart\"> </a><a name=\"hctobacco-swart\"> </a><a name=\"tobacco-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 365980008}\">Finding of tobacco use and exposure (finding)</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 230059006}\">Occasional cigarette smoker</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 53661000146106}\">Type of tobacco used (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 722499006}\">Electronic cigarette user</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 266918002}\">Tobacco smoking consumption (observable entity)</span></p><p><b>value</b>: 6 keer per dag inhaleren<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{keer per dag inhaleren} = '{keer per dag inhaleren}')</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "365980008",
+      "display" : "Finding of tobacco use and exposure (finding)"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "effectiveDateTime" : "2025-02-08",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "230059006",
+      "display" : "Occasional cigarette smoker"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "53661000146106",
+        "display" : "Type of tobacco used (observable entity)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "722499006",
+        "display" : "Electronic cigarette user"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "266918002",
+        "display" : "Tobacco smoking consumption (observable entity)"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 6,
+      "unit" : "keer per dag inhaleren",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{keer per dag inhaleren}"
+    }
+  }]
+}

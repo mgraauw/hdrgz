@@ -1,0 +1,126 @@
+hdrgz : Validation Results
+=========================================
+
+err = 0, warn = 81, info = 0
+IG Publisher Version: 1.8.26
+Generated Thu May 15 14:45:45 CEST 2025. FHIR version 4.0.1 for hdrgz#0.1.0 (canonical = http://hdrgz.org)
+ Build Errors : 0 / 22 / 0
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Bundle-bundle-swart : 0 / 36 / 21
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Composition-composition-swart : 0 / 0 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Condition-condition-growth : 0 / 0 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Condition-condition-meerling : 0 / 0 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Encounter-ziekenhuisopname-swart : 0 / 1 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\ImplementationGuide-hdrgz : 0 / 1 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-alcohol-swart : 0 / 1 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-bloeddruk-swart : 0 / 1 / 2
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-gewicht-swart : 0 / 1 / 2
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-lab-swart-3 : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-lab-swart-4 : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-lab-swart-5 : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-lab-swart-6 : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-levenvoelen-swart : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Observation-tobacco-swart : 0 / 2 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Organization-organization-sophia : 0 / 5 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Patient-patient-swart : 0 / 1 / 1
+ C:\Source\hl7-eu\hdrgz\fsh-generated\resources\Procedure-sectio-swart : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/lab-swart-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/alcohol-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/bloeddruk-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/gewicht-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/bundle-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization-sophia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/levenvoelen-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/lab-swart-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/lab-swart-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/composition-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/ziekenhuisopname-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/lab-swart-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/sectio-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tobacco-swart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/condition-growth.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/condition-meerling.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated\resources\Bundle-bundle-swart.json ==
+WARNING: Bundle/bundle-swart: Bundle.identifier.system: URL value 'urn:ietf:rfc:4122' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[3].resource/*Encounter/ziekenhuisopname-swart*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/bundle-swart: Bundle.entry[4].resource/*Observation/alcohol-swart*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[5].resource/*Observation/bloeddruk-swart*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[6].resource/*Observation/gewicht-swart*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[7].resource/*Observation/lab-swart-3*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[7].resource/*Observation/lab-swart-3*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[8].resource/*Observation/lab-swart-4*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[8].resource/*Observation/lab-swart-4*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[9].resource/*Observation/lab-swart-5*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[9].resource/*Observation/lab-swart-5*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[10].resource/*Observation/lab-swart-6*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[10].resource/*Observation/lab-swart-6*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[11].resource/*Observation/levenvoelen-swart*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[11].resource/*Observation/levenvoelen-swart*/.identifier[0].system: URL value 'urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[12].resource/*Observation/tobacco-swart*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[12].resource/*Observation/tobacco-swart*/.component[1].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {keer per dag inhaleren} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Bundle/bundle-swart: Bundle.entry[13].resource/*Organization/organization-sophia*/.identifier[0].system: URL value 'http://fhir.nl/fhir/NamingSystem/agb-z' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[13].resource/*Organization/organization-sophia*/.type[0].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.6.7' version '2.16.840.1.113883.2.4.6.7' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: Bundle/bundle-swart: Bundle.entry[13].resource/*Organization/organization-sophia*/.type[0].coding[0].system: URL value 'urn:oid:2.16.840.1.113883.2.4.6.7' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[13].resource/*Organization/organization-sophia*/.type[1].coding[0].system: A definition for CodeSystem 'http://nictiz.nl/fhir/NamingSystem/organization-type' could not be found, so the code cannot be validated
+WARNING: Bundle/bundle-swart: Bundle.entry[13].resource/*Organization/organization-sophia*/.type[1].coding[0].system: URL value 'http://nictiz.nl/fhir/NamingSystem/organization-type' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[14].resource/*Patient/patient-swart*/.identifier[0].system: URL value 'http://fhir.nl/fhir/NamingSystem/bsn' does not resolve
+WARNING: Bundle/bundle-swart: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/bundle-swart: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-swart: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Composition-composition-swart.json ==
+== fsh-generated\resources\Condition-condition-growth.json ==
+== fsh-generated\resources\Condition-condition-meerling.json ==
+== fsh-generated\resources\Encounter-ziekenhuisopname-swart.json ==
+WARNING: Encounter/ziekenhuisopname-swart: Encounter.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated\resources\ImplementationGuide-hdrgz.json ==
+WARNING: ImplementationGuide/hdrgz: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated\resources\Observation-alcohol-swart.json ==
+WARNING: Observation/alcohol-swart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Observation-bloeddruk-swart.json ==
+WARNING: Observation/bloeddruk-swart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Observation-gewicht-swart.json ==
+WARNING: Observation/gewicht-swart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Observation-lab-swart-3.json ==
+WARNING: Observation/lab-swart-3: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/lab-swart-3: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-lab-swart-4.json ==
+WARNING: Observation/lab-swart-4: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/lab-swart-4: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-lab-swart-5.json ==
+WARNING: Observation/lab-swart-5: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/lab-swart-5: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-lab-swart-6.json ==
+WARNING: Observation/lab-swart-6: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/lab-swart-6: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated\resources\Observation-levenvoelen-swart.json ==
+WARNING: Observation/levenvoelen-swart: Observation.identifier[0].system: URL value 'urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6' does not resolve
+WARNING: Observation/levenvoelen-swart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Observation-tobacco-swart.json ==
+WARNING: Observation/tobacco-swart: Observation.component[1].value.ofType(Quantity): UCUM Codes that contain human readable annotations like {keer per dag inhaleren} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/tobacco-swart: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated\resources\Organization-organization-sophia.json ==
+WARNING: Organization/organization-sophia: Organization.identifier[0].system: URL value 'http://fhir.nl/fhir/NamingSystem/agb-z' does not resolve
+WARNING: Organization/organization-sophia: Organization.type[0].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.6.7' version '2.16.840.1.113883.2.4.6.7' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: Organization/organization-sophia: Organization.type[0].coding[0].system: URL value 'urn:oid:2.16.840.1.113883.2.4.6.7' does not resolve
+WARNING: Organization/organization-sophia: Organization.type[1].coding[0].system: A definition for CodeSystem 'http://nictiz.nl/fhir/NamingSystem/organization-type' could not be found, so the code cannot be validated
+WARNING: Organization/organization-sophia: Organization.type[1].coding[0].system: URL value 'http://nictiz.nl/fhir/NamingSystem/organization-type' does not resolve
+== fsh-generated\resources\Patient-patient-swart.json ==
+WARNING: Patient/patient-swart: Patient.identifier[0].system: URL value 'http://fhir.nl/fhir/NamingSystem/bsn' does not resolve
+== fsh-generated\resources\Procedure-sectio-swart.json ==

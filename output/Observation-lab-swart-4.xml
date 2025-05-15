@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-swart-4"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-4</b></p><a name="lab-swart-4"> </a><a name="hclab-swart-4"> </a><a name="lab-swart-4-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 1305-2}">D Ag [Presence] in Blood</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 165747007}">RhD positive</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="1305-2"/>
+      <display value="D Ag [Presence] in Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://example.org/Patient/patient-swart"/>
+    <display value="Fiona F XXX_Swart"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="165747007"/>
+      <display value="RhD positive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

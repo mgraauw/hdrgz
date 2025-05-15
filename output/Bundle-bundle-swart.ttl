@@ -1,0 +1,899 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hdrgz.org/Bundle/bundle-swart> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-swart"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:4122"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3e594fe5-3ed5-4305-a214-99c87e1f3bfa" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2025-05-11T10:18:14.632+00:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/Composition/composition-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Composition/composition-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Condition/condition-growth"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Condition/condition-growth> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Condition/condition-meerling"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Condition/condition-meerling> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Encounter/ziekenhuisopname-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Encounter/ziekenhuisopname-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/alcohol-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/alcohol-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/bloeddruk-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/bloeddruk-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/gewicht-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/gewicht-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/lab-swart-3"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/lab-swart-3> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/lab-swart-4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/lab-swart-4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/lab-swart-5"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/lab-swart-5> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/lab-swart-6"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/lab-swart-6> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/levenvoelen-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/levenvoelen-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Observation/tobacco-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Observation/tobacco-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Organization/organization-sophia"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Organization/organization-sophia> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Patient/patient-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Patient/patient-swart> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/Procedure/sectio-swart"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Procedure/sectio-swart> )
+  ] ) . # 
+
+<http://example.org/Composition/composition-swart> a fhir:Composition ;
+  fhir:id [ fhir:v "composition-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_composition-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-swart</b></p><a name=\"composition-swart\"> </a><a name=\"hccomposition-swart\"> </a><a name=\"composition-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 34105-7}\">Hospital Discharge summary</span></p><p><b>encounter</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Encounter/ziekenhuisopname-swart\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>date</b>: 2023-11-01 10:18:13+0000</p><p><b>author</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Organization/organization-sophia\">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>title</b>: Hospital Discharge summary</p><p><b>confidentiality</b>: normal</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:34105-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "34105-7" ] ;
+       fhir:display [ fhir:v "Hospital Discharge summary" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/ziekenhuisopname-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Encounter/ziekenhuisopname-swart" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-11-01T10:18:13.947+00:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://example.org/Organization/organization-sophia> ;
+     fhir:reference [ fhir:v "http://example.org/Organization/organization-sophia" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Hospital Discharge summary"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Admission evaluation" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:67851-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "67851-6" ] ;
+         fhir:display [ fhir:v "Admission evaluation note" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was admitted to the hospital for a planned cesarean section.</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:section ( [
+       fhir:title [ fhir:v "Vital signs" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:8716-3 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "8716-3" ] ;
+           fhir:display [ fhir:v "Vital signs" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Body weight</td><td>63 kg</td></tr><tr><td>Blood pressure panel with all children optional</td><td/></tr><tr><td>Systolic blood pressure</td><td>120 mmHg</td></tr><tr><td>Diastolic blood pressure</td><td>70 mmHg</td></tr><tr><td>Pattern of fetal movement</td><td>Fetal movements present</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/gewicht-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/gewicht-swart" ] ;
+         fhir:display [ fhir:v "63 kg" ]
+       ] [
+         fhir:link <http://example.org/Observation/bloeddruk-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/bloeddruk-swart" ] ;
+         fhir:display [ fhir:v "70/120 mmHg" ]
+       ] [
+         fhir:link <http://example.org/Observation/levenvoelen-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/levenvoelen-swart" ] ;
+         fhir:display [ fhir:v "foetale bewegingen aanwezig" ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "Social history" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:29762-2 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "29762-2" ] ;
+           fhir:display [ fhir:v "Social history Narrative" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Alcohol drinking behaviour</td><td>Current non-drinker of alcohol</td></tr><tr><td>Finding of tobacco use and exposure (finding)</td><td>Occasional cigarette smoker</td></tr><tr><td>Type of tobacco used (observable entity)</td><td>Electronic cigarette user</td></tr><tr><td>Tobacco smoking consumption (observable entity)</td><td>6 keer per dag inhaleren</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Observation/alcohol-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/alcohol-swart" ] ;
+         fhir:display [ fhir:v "does not drink alcohol" ]
+       ] [
+         fhir:link <http://example.org/Observation/tobacco-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Observation/tobacco-swart" ] ;
+         fhir:display [ fhir:v "smokes occasionally cigarettes" ]
+       ] )
+     ] [
+       fhir:title [ fhir:v "Significant procedures" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a loinc:10185-7 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "10185-7" ] ;
+           fhir:display [ fhir:v "Hospital discharge procedures Narrative" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Obstetric procedure</td><td>Cesarean section</td></tr></table></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:entry ( [
+         fhir:link <http://example.org/Procedure/sectio-swart> ;
+         fhir:reference [ fhir:v "http://example.org/Procedure/sectio-swart" ] ;
+         fhir:display [ fhir:v "planned primary sectio caesarea" ]
+       ] )
+     ] )
+  ] [
+     fhir:title [ fhir:v "Problem List" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list - Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>Monochorionic diamniotic twin pregnancy</td><td>resolved</td></tr><tr><td>Fetal growth restriction</td><td>resolved</td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Condition/condition-meerling> ;
+       fhir:reference [ fhir:v "http://example.org/Condition/condition-meerling" ]
+     ] [
+       fhir:link <http://example.org/Condition/condition-growth> ;
+       fhir:reference [ fhir:v "http://example.org/Condition/condition-growth" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Results" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:30954-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "30954-2" ] ;
+         fhir:display [ fhir:v "Relevant diagnostic tests/laboratory data Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td>ABO group [Type] in Blood</td><td>Blood group O</td></tr><tr><td>D Ag [Presence] in Blood</td><td>RhD positive</td></tr><tr><td>Hemoglobin [Moles/volume] in Venous blood</td><td>7.3 mmol/L</td></tr><tr><td>HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</td><td>HIV not detected</td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://example.org/Observation/lab-swart-3> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-3" ] ;
+       fhir:display [ fhir:v "ABO group" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-4> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-4" ] ;
+       fhir:display [ fhir:v "Rh D factor" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-5> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-5" ] ;
+       fhir:display [ fhir:v "hemoglobin" ]
+     ] [
+       fhir:link <http://example.org/Observation/lab-swart-6> ;
+       fhir:reference [ fhir:v "http://example.org/Observation/lab-swart-6" ] ;
+       fhir:display [ fhir:v "HIV 1 As" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Discharge details" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8650-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8650-4" ] ;
+         fhir:display [ fhir:v "Hospital discharge disposition Narrative" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Fiona Swart was discharged after cesarean section with healthy twin.</div>"^^rdf:XMLLiteral
+     ]
+  ] ) . # 
+
+<http://example.org/Condition/condition-growth> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-growth"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-growth\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-growth</b></p><a name=\"condition-growth\"> </a><a name=\"hccondition-growth\"> </a><a name=\"condition-growth-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 22033007}\">Fetal growth restriction</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>onset</b>: 2025-02-08</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:22033007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22033007" ] ;
+       fhir:display [ fhir:v "Fetal growth restriction" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] . # 
+
+<http://example.org/Condition/condition-meerling> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-meerling"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-meerling\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-meerling</b></p><a name=\"condition-meerling\"> </a><a name=\"hccondition-meerling\"> </a><a name=\"condition-meerling-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 459168005}\">Monochorionic diamniotic twin pregnancy</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>onset</b>: 2025-02-08</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:459168005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "459168005" ] ;
+       fhir:display [ fhir:v "Monochorionic diamniotic twin pregnancy" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] . # 
+
+<http://example.org/Encounter/ziekenhuisopname-swart> a fhir:Encounter ;
+  fhir:id [ fhir:v "ziekenhuisopname-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_ziekenhuisopname-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter ziekenhuisopname-swart</b></p><a name=\"ziekenhuisopname-swart\"> </a><a name=\"hcziekenhuisopname-swart\"> </a><a name=\"ziekenhuisopname-swart-en-US\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] IMP: IMP</p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>period</b>: 2025-02-08 10:00:00+0000 --&gt; 2025-02-12 12:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 65147003}\">Twin pregnancy</span></p><p><b>reasonReference</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling\">Twin pregnancy</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling\">monochoriale diamniotische tweelingzwangerschap</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:code [ fhir:v "IMP" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-02-08T10:00:00+00:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-02-12T12:00:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:65147003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65147003" ] ;
+       fhir:display [ fhir:v "Twin pregnancy" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://example.org/Condition/condition-meerling> ;
+     fhir:reference [ fhir:v "http://example.org/Condition/condition-meerling" ] ;
+     fhir:display [ fhir:v "Twin pregnancy" ]
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://example.org/Condition/condition-meerling> ;
+       fhir:reference [ fhir:v "http://example.org/Condition/condition-meerling" ] ;
+       fhir:display [ fhir:v "monochoriale diamniotische tweelingzwangerschap" ]
+     ]
+  ] ) . # 
+
+<http://example.org/Observation/alcohol-swart> a fhir:Observation ;
+  fhir:id [ fhir:v "alcohol-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_alcohol-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation alcohol-swart</b></p><a name=\"alcohol-swart\"> </a><a name=\"hcalcohol-swart\"> </a><a name=\"alcohol-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 228273003}\">Alcohol drinking behaviour</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 105542008}\">Current non-drinker of alcohol</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:228273003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "228273003" ] ;
+       fhir:display [ fhir:v "Alcohol drinking behaviour" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:105542008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "105542008" ] ;
+       fhir:display [ fhir:v "Current non-drinker of alcohol" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/bloeddruk-swart> a fhir:Observation ;
+  fhir:id [ fhir:v "bloeddruk-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_bloeddruk-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation bloeddruk-swart</b></p><a name=\"bloeddruk-swart\"> </a><a name=\"hcbloeddruk-swart\"> </a><a name=\"bloeddruk-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {http://loinc.org 55284-4}, {http://snomed.info/sct 46973005}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}\">Systolic blood pressure</span></p><p><b>value</b>: 120 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}\">Diastolic blood pressure</span></p><p><b>value</b>: 70 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] [
+       a loinc:55284-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "55284-4" ] ;
+       fhir:display [ fhir:v "Blood pressure systolic and diastolic" ]
+     ] [
+       a sct:46973005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46973005" ] ;
+       fhir:display [ fhir:v "Blood pressure taking" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "70"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+<http://example.org/Observation/gewicht-swart> a fhir:Observation ;
+  fhir:id [ fhir:v "gewicht-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_gewicht-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation gewicht-swart</b></p><a name=\"gewicht-swart\"> </a><a name=\"hcgewicht-swart\"> </a><a name=\"gewicht-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: 63 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29463-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29463-7" ] ;
+       fhir:display [ fhir:v "Body weight" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "63"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg" ]
+  ] . # 
+
+<http://example.org/Observation/lab-swart-3> a fhir:Observation ;
+  fhir:id [ fhir:v "lab-swart-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-swart-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-3</b></p><a name=\"lab-swart-3\"> </a><a name=\"hclab-swart-3\"> </a><a name=\"lab-swart-3-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 883-9}\">ABO group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 58460004}\">Blood group O</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:883-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "883-9" ] ;
+       fhir:display [ fhir:v "ABO group [Type] in Blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:58460004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58460004" ] ;
+       fhir:display [ fhir:v "Blood group O" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/lab-swart-4> a fhir:Observation ;
+  fhir:id [ fhir:v "lab-swart-4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-swart-4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-4</b></p><a name=\"lab-swart-4\"> </a><a name=\"hclab-swart-4\"> </a><a name=\"lab-swart-4-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 1305-2}\">D Ag [Presence] in Blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 165747007}\">RhD positive</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:1305-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1305-2" ] ;
+       fhir:display [ fhir:v "D Ag [Presence] in Blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:165747007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "165747007" ] ;
+       fhir:display [ fhir:v "RhD positive" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/lab-swart-5> a fhir:Observation ;
+  fhir:id [ fhir:v "lab-swart-5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-swart-5\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-5</b></p><a name=\"lab-swart-5\"> </a><a name=\"hclab-swart-5\"> </a><a name=\"lab-swart-5-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93846-4}\">Hemoglobin [Moles/volume] in Venous blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: 7.3 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:93846-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "93846-4" ] ;
+       fhir:display [ fhir:v "Hemoglobin [Moles/volume] in Venous blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 7.3 ] ;
+     fhir:unit [ fhir:v "mmol/L" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mmol/L" ]
+  ] . # 
+
+<http://example.org/Observation/lab-swart-6> a fhir:Observation ;
+  fhir:id [ fhir:v "lab-swart-6"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_lab-swart-6\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-6</b></p><a name=\"lab-swart-6\"> </a><a name=\"hclab-swart-6\"> </a><a name=\"lab-swart-6-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29893-5}\">HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 165815009}\">HIV not detected</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:29893-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29893-5" ] ;
+       fhir:display [ fhir:v "HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:165815009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "165815009" ] ;
+       fhir:display [ fhir:v "HIV not detected" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/levenvoelen-swart> a fhir:Observation ;
+  fhir:id [ fhir:v "levenvoelen-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_levenvoelen-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation levenvoelen-swart</b></p><a name=\"levenvoelen-swart\"> </a><a name=\"hclevenvoelen-swart\"> </a><a name=\"levenvoelen-swart-en-US\"> </a><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6</code>/38e436bf-6b35-11ec-2213-020000000000</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364618000}\">Pattern of fetal movement</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 289431008}\">Fetal movements present</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "38e436bf-6b35-11ec-2213-020000000000" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:364618000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "364618000" ] ;
+       fhir:display [ fhir:v "Pattern of fetal movement" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:289431008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "289431008" ] ;
+       fhir:display [ fhir:v "Fetal movements present" ]
+     ] )
+  ] . # 
+
+<http://example.org/Observation/tobacco-swart> a fhir:Observation ;
+  fhir:id [ fhir:v "tobacco-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_tobacco-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation tobacco-swart</b></p><a name=\"tobacco-swart\"> </a><a name=\"hctobacco-swart\"> </a><a name=\"tobacco-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 365980008}\">Finding of tobacco use and exposure (finding)</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 230059006}\">Occasional cigarette smoker</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 53661000146106}\">Type of tobacco used (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 722499006}\">Electronic cigarette user</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 266918002}\">Tobacco smoking consumption (observable entity)</span></p><p><b>value</b>: 6 keer per dag inhaleren<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{keer per dag inhaleren} = '{keer per dag inhaleren}')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:365980008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "365980008" ] ;
+       fhir:display [ fhir:v "Finding of tobacco use and exposure (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-02-08"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:230059006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "230059006" ] ;
+       fhir:display [ fhir:v "Occasional cigarette smoker" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:53661000146106 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53661000146106" ] ;
+         fhir:display [ fhir:v "Type of tobacco used (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:722499006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "722499006" ] ;
+         fhir:display [ fhir:v "Electronic cigarette user" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:266918002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "266918002" ] ;
+         fhir:display [ fhir:v "Tobacco smoking consumption (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "keer per dag inhaleren" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{keer per dag inhaleren}" ]
+     ]
+  ] ) . # 
+
+<http://example.org/Organization/organization-sophia> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-sophia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-sophia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-sophia</b></p><a name=\"organization-sophia\"> </a><a name=\"hcorganization-sophia\"> </a><a name=\"organization-sophia-en-US\"> </a><p><b>identifier</b>: <code>http://fhir.nl/fhir/NamingSystem/agb-z</code>/06020806</p><p><b>type</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.2.4.6.7 0300}\">Medisch specialist</span>, <span title=\"Codes:{http://nictiz.nl/fhir/NamingSystem/organization-type V5}\">Universitair Medisch Centrum</span></p><p><b>name</b>: Erasmus MC, Sophia kinderziekenhuis</p><p><b>telecom</b>: ph: 0107040116, <a href=\"mailto:info@erasmusmc.nl\">info@erasmusmc.nl</a></p><p><b>address</b>: Dr. Molewaterplein 60 ROTTERDAM 3015GJ NL (work)</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/agb-z"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "06020806" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.7"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2.16.840.1.113883.2.4.6.7" ] ;
+       fhir:code [ fhir:v "0300" ] ;
+       fhir:display [ fhir:v "Medisch specialist" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://nictiz.nl/fhir/NamingSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "V5" ] ;
+       fhir:display [ fhir:v "Universitair Medisch Centrum" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Erasmus MC, Sophia kinderziekenhuis"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0107040116" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "info@erasmusmc.nl" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [
+       fhir:v "Dr. Molewaterplein 60" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Dr. Molewaterplein"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "60"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "ROTTERDAM" ] ;
+     fhir:postalCode [ fhir:v "3015GJ" ] ;
+     fhir:country [ fhir:v "NL" ]
+  ] ) . # 
+
+<http://example.org/Patient/patient-swart> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-swart</b></p><a name=\"patient-swart\"> </a><a name=\"hcpatient-swart\"> </a><a name=\"patient-swart-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Fiona XXX_Swart Female, DoB: 1985-12-23 ( http://fhir.nl/fhir/NamingSystem/bsn#999901448)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 0655223366(Mobile)</li><li>Knolweg 1000 STITSWERD 9999XA NL (home)</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/bsn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "999901448" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "NL1"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Fiona XXX_Swart" ] ;
+     fhir:family [
+       fhir:v "XXX_Swart" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "XXX_Swart"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [
+       fhir:v "Fiona" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "BR"
+         ]
+       ] )
+     ] [
+       fhir:v "F" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "IN"
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0655223366" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-12-23"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:line ( [
+       fhir:v "Knolweg 1000" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Knolweg"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "1000"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "STITSWERD" ] ;
+     fhir:postalCode [ fhir:v "9999XA" ] ;
+     fhir:country [ fhir:v "NL" ]
+  ] ) ; # 
+  fhir:multipleBirth [
+     a fhir:boolean ;
+     fhir:v false
+  ] . # 
+
+<http://example.org/Procedure/sectio-swart> a fhir:Procedure ;
+  fhir:id [ fhir:v "sectio-swart"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_sectio-swart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure sectio-swart</b></p><a name=\"sectio-swart\"> </a><a name=\"hcsectio-swart\"> </a><a name=\"sectio-swart-en-US\"> </a><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 386637004}\">Obstetric procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11466000}\">Cesarean section</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>performed</b>: 2025-02-10 10:03:00+0200 --&gt; 2025-02-10 11:48:00+0200</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:386637004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "386637004" ] ;
+       fhir:display [ fhir:v "Obstetric procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:11466000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11466000" ] ;
+       fhir:display [ fhir:v "Cesarean section" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/patient-swart> ;
+     fhir:reference [ fhir:v "http://example.org/Patient/patient-swart" ] ;
+     fhir:display [ fhir:v "Fiona F XXX_Swart" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-02-10T10:03:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-02-10T11:48:00+02:00"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

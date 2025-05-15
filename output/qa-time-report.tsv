@@ -1,0 +1,19 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-hdrgz.json	3923	-	0	0	0	0	0	0	2	935	0	0	0	0	0	0	0	0	0	0	91	102	0	0	0	1	0	1
+fsh-generated/resources/Bundle-bundle-swart.json	26835	10	46	0	0	0	0	2	2	410	0	0	0	0	0	0	0	0	0	0	81	121	0	0	0	0	0	0
+fsh-generated/resources/Composition-composition-swart.json	6678	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	35	36	0	0	0	0	0	0
+fsh-generated/resources/Condition-condition-growth.json	554	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	22	0	0	0	0	0	0
+fsh-generated/resources/Condition-condition-meerling.json	572	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	20	20	0	0	0	0	0	0
+fsh-generated/resources/Encounter-ziekenhuisopname-swart.json	887	4	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	19	18	0	0	0	0	0	0
+fsh-generated/resources/Observation-alcohol-swart.json	607	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	26	17	0	0	0	0	0	0
+fsh-generated/resources/Observation-bloeddruk-swart.json	1677	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	18	17	0	0	0	0	0	0
+fsh-generated/resources/Observation-gewicht-swart.json	738	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	16	18	0	0	0	0	0	0
+fsh-generated/resources/Observation-lab-swart-3.json	539	5	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	24	16	0	0	0	0	0	0
+fsh-generated/resources/Observation-lab-swart-4.json	539	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	18	0	0	0	0	0	0
+fsh-generated/resources/Observation-lab-swart-5.json	509	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	17	18	0	0	0	0	0	0
+fsh-generated/resources/Observation-lab-swart-6.json	573	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	23	0	0	0	0	0	0
+fsh-generated/resources/Observation-levenvoelen-swart.json	754	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	15	19	0	0	1	0	0	0
+fsh-generated/resources/Observation-tobacco-swart.json	1545	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	18	0	0	0	0	0	0
+fsh-generated/resources/Organization-organization-sophia.json	1447	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	17	15	0	0	0	0	0	0
+fsh-generated/resources/Patient-patient-swart.json	1915	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	13	0	0	0	0	0	0
+fsh-generated/resources/Procedure-sectio-swart.json	646	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	15	14	0	0	0	0	0	0

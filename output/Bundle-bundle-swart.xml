@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-swart"/>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="3e594fe5-3ed5-4305-a214-99c87e1f3bfa"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2025-05-11T10:18:14.632+00:00"/>
+  <entry>
+    <fullUrl value="http://example.org/Composition/composition-swart"/>
+    <resource>
+      <Composition>
+        <id value="composition-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_composition-swart"> </a><p class="res-header-id"><b>Generated Narrative: Composition composition-swart</b></p><a name="composition-swart"> </a><a name="hccomposition-swart"> </a><a name="composition-swart-en-US"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 34105-7}">Hospital Discharge summary</span></p><p><b>encounter</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Encounter/ziekenhuisopname-swart">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>date</b>: 2023-11-01 10:18:13+0000</p><p><b>author</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Organization/organization-sophia">Bundle: identifier = urn:ietf:rfc:4122#3e594fe5-3ed5-4305-a214-99c87e1f3bfa; type = document; timestamp = 2025-05-11 10:18:14+0000</a></p><p><b>title</b>: Hospital Discharge summary</p><p><b>confidentiality</b>: normal</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="34105-7"/>
+            <display value="Hospital Discharge summary"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+        </subject>
+        <encounter>
+          <reference value="http://example.org/Encounter/ziekenhuisopname-swart"/>
+        </encounter>
+        <date value="2023-11-01T10:18:13.947+00:00"/>
+        <author>
+          <reference value="http://example.org/Organization/organization-sophia"/>
+        </author>
+        <title value="Hospital Discharge summary"/>
+        <confidentiality value="N"/>
+        <section>
+          <title value="Admission evaluation"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="67851-6"/>
+              <display value="Admission evaluation note"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient Fiona Swart was admitted to the hospital for a planned cesarean section.</div>
+          </text>
+          <section>
+            <title value="Vital signs"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="8716-3"/>
+                <display value="Vital signs"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><td>Body weight</td><td>63 kg</td></tr><tr><td>Blood pressure panel with all children optional</td><td/></tr><tr><td>Systolic blood pressure</td><td>120 mmHg</td></tr><tr><td>Diastolic blood pressure</td><td>70 mmHg</td></tr><tr><td>Pattern of fetal movement</td><td>Fetal movements present</td></tr></table></div>
+            </text>
+            <entry>
+              <reference value="http://example.org/Observation/gewicht-swart"/>
+              <display value="63 kg"/>
+            </entry>
+            <entry>
+              <reference value="http://example.org/Observation/bloeddruk-swart"/>
+              <display value="70/120 mmHg"/>
+            </entry>
+            <entry>
+              <reference value="http://example.org/Observation/levenvoelen-swart"/>
+              <display value="foetale bewegingen aanwezig"/>
+            </entry>
+          </section>
+          <section>
+            <title value="Social history"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="29762-2"/>
+                <display value="Social history Narrative"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><td>Alcohol drinking behaviour</td><td>Current non-drinker of alcohol</td></tr><tr><td>Finding of tobacco use and exposure (finding)</td><td>Occasional cigarette smoker</td></tr><tr><td>Type of tobacco used (observable entity)</td><td>Electronic cigarette user</td></tr><tr><td>Tobacco smoking consumption (observable entity)</td><td>6 keer per dag inhaleren</td></tr></table></div>
+            </text>
+            <entry>
+              <reference value="http://example.org/Observation/alcohol-swart"/>
+              <display value="does not drink alcohol"/>
+            </entry>
+            <entry>
+              <reference value="http://example.org/Observation/tobacco-swart"/>
+              <display value="smokes occasionally cigarettes"/>
+            </entry>
+          </section>
+          <section>
+            <title value="Significant procedures"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="10185-7"/>
+                <display value="Hospital discharge procedures Narrative"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><td>Obstetric procedure</td><td>Cesarean section</td></tr></table></div>
+            </text>
+            <entry>
+              <reference value="http://example.org/Procedure/sectio-swart"/>
+              <display value="planned primary sectio caesarea"/>
+            </entry>
+          </section>
+        </section>
+        <section>
+          <title value="Problem List"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+              <display value="Problem list - Reported"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><td>Monochorionic diamniotic twin pregnancy</td><td>resolved</td></tr><tr><td>Fetal growth restriction</td><td>resolved</td></tr></table></div>
+          </text>
+          <entry>
+            <reference value="http://example.org/Condition/condition-meerling"/>
+          </entry>
+          <entry>
+            <reference value="http://example.org/Condition/condition-growth"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Results"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="30954-2"/>
+              <display value="Relevant diagnostic tests/laboratory data Narrative"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><tr><td>ABO group [Type] in Blood</td><td>Blood group O</td></tr><tr><td>D Ag [Presence] in Blood</td><td>RhD positive</td></tr><tr><td>Hemoglobin [Moles/volume] in Venous blood</td><td>7.3 mmol/L</td></tr><tr><td>HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</td><td>HIV not detected</td></tr></table></div>
+          </text>
+          <entry>
+            <reference value="http://example.org/Observation/lab-swart-3"/>
+            <display value="ABO group"/>
+          </entry>
+          <entry>
+            <reference value="http://example.org/Observation/lab-swart-4"/>
+            <display value="Rh D factor"/>
+          </entry>
+          <entry>
+            <reference value="http://example.org/Observation/lab-swart-5"/>
+            <display value="hemoglobin"/>
+          </entry>
+          <entry>
+            <reference value="http://example.org/Observation/lab-swart-6"/>
+            <display value="HIV 1 As"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Discharge details"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8650-4"/>
+              <display value="Hospital discharge disposition Narrative"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient Fiona Swart was discharged after cesarean section with healthy twin.</div>
+          </text>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Condition/condition-growth"/>
+    <resource>
+      <Condition>
+        <id value="condition-growth"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-growth"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-growth</b></p><a name="condition-growth"> </a><a name="hccondition-growth"> </a><a name="condition-growth-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 22033007}">Fetal growth restriction</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>onset</b>: 2025-02-08</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="22033007"/>
+            <display value="Fetal growth restriction"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <onsetDateTime value="2025-02-08"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Condition/condition-meerling"/>
+    <resource>
+      <Condition>
+        <id value="condition-meerling"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-meerling"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-meerling</b></p><a name="condition-meerling"> </a><a name="hccondition-meerling"> </a><a name="condition-meerling-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 459168005}">Monochorionic diamniotic twin pregnancy</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>onset</b>: 2025-02-08</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="459168005"/>
+            <display value="Monochorionic diamniotic twin pregnancy"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <onsetDateTime value="2025-02-08"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Encounter/ziekenhuisopname-swart"/>
+    <resource>
+      <Encounter>
+        <id value="ziekenhuisopname-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_ziekenhuisopname-swart"> </a><p class="res-header-id"><b>Generated Narrative: Encounter ziekenhuisopname-swart</b></p><a name="ziekenhuisopname-swart"> </a><a name="hcziekenhuisopname-swart"> </a><a name="ziekenhuisopname-swart-en-US"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] IMP: IMP</p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>period</b>: 2025-02-08 10:00:00+0000 --&gt; 2025-02-12 12:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 65147003}">Twin pregnancy</span></p><p><b>reasonReference</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling">Twin pregnancy</a></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-bundle-swart.html#http-//example.org/Condition/condition-meerling">monochoriale diamniotische tweelingzwangerschap</a></td></tr></table></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <code value="IMP"/>
+        </class>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <period>
+          <start value="2025-02-08T10:00:00+00:00"/>
+          <end value="2025-02-12T12:00:00+00:00"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="65147003"/>
+            <display value="Twin pregnancy"/>
+          </coding>
+        </reasonCode>
+        <reasonReference>
+          <reference value="http://example.org/Condition/condition-meerling"/>
+          <display value="Twin pregnancy"/>
+        </reasonReference>
+        <diagnosis>
+          <condition>
+            <reference value="http://example.org/Condition/condition-meerling"/>
+            <display value="monochoriale diamniotische tweelingzwangerschap"/>
+          </condition>
+        </diagnosis>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/alcohol-swart"/>
+    <resource>
+      <Observation>
+        <id value="alcohol-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_alcohol-swart"> </a><p class="res-header-id"><b>Generated Narrative: Observation alcohol-swart</b></p><a name="alcohol-swart"> </a><a name="hcalcohol-swart"> </a><a name="alcohol-swart-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 228273003}">Alcohol drinking behaviour</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 105542008}">Current non-drinker of alcohol</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="228273003"/>
+            <display value="Alcohol drinking behaviour"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <effectiveDateTime value="2025-02-08"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="105542008"/>
+            <display value="Current non-drinker of alcohol"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/bloeddruk-swart"/>
+    <resource>
+      <Observation>
+        <id value="bloeddruk-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_bloeddruk-swart"> </a><p class="res-header-id"><b>Generated Narrative: Observation bloeddruk-swart</b></p><a name="bloeddruk-swart"> </a><a name="hcbloeddruk-swart"> </a><a name="bloeddruk-swart-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 85354-9}, {http://loinc.org 55284-4}, {http://snomed.info/sct 46973005}">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 120 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 70 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="55284-4"/>
+            <display value="Blood pressure systolic and diastolic"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="46973005"/>
+            <display value="Blood pressure taking"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <effectiveDateTime value="2025-02-08"/>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8480-6"/>
+              <display value="Systolic blood pressure"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="120"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8462-4"/>
+              <display value="Diastolic blood pressure"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="70"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm[Hg]"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/gewicht-swart"/>
+    <resource>
+      <Observation>
+        <id value="gewicht-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_gewicht-swart"> </a><p class="res-header-id"><b>Generated Narrative: Observation gewicht-swart</b></p><a name="gewicht-swart"> </a><a name="hcgewicht-swart"> </a><a name="gewicht-swart-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: 63 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <effectiveDateTime value="2025-02-08"/>
+        <valueQuantity>
+          <value value="63"/>
+          <unit value="kg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/lab-swart-3"/>
+    <resource>
+      <Observation>
+        <id value="lab-swart-3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_lab-swart-3"> </a><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-3</b></p><a name="lab-swart-3"> </a><a name="hclab-swart-3"> </a><a name="lab-swart-3-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 883-9}">ABO group [Type] in Blood</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 58460004}">Blood group O</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="883-9"/>
+            <display value="ABO group [Type] in Blood"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58460004"/>
+            <display value="Blood group O"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/lab-swart-4"/>
+    <resource>
+      <Observation>
+        <id value="lab-swart-4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_lab-swart-4"> </a><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-4</b></p><a name="lab-swart-4"> </a><a name="hclab-swart-4"> </a><a name="lab-swart-4-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 1305-2}">D Ag [Presence] in Blood</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 165747007}">RhD positive</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="1305-2"/>
+            <display value="D Ag [Presence] in Blood"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165747007"/>
+            <display value="RhD positive"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/lab-swart-5"/>
+    <resource>
+      <Observation>
+        <id value="lab-swart-5"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_lab-swart-5"> </a><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-5</b></p><a name="lab-swart-5"> </a><a name="hclab-swart-5"> </a><a name="lab-swart-5-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 93846-4}">Hemoglobin [Moles/volume] in Venous blood</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: 7.3 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="93846-4"/>
+            <display value="Hemoglobin [Moles/volume] in Venous blood"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <valueQuantity>
+          <value value="7.3"/>
+          <unit value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mmol/L"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/lab-swart-6"/>
+    <resource>
+      <Observation>
+        <id value="lab-swart-6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_lab-swart-6"> </a><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-6</b></p><a name="lab-swart-6"> </a><a name="hclab-swart-6"> </a><a name="lab-swart-6-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 29893-5}">HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 165815009}">HIV not detected</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29893-5"/>
+            <display value="HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="165815009"/>
+            <display value="HIV not detected"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/levenvoelen-swart"/>
+    <resource>
+      <Observation>
+        <id value="levenvoelen-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_levenvoelen-swart"> </a><p class="res-header-id"><b>Generated Narrative: Observation levenvoelen-swart</b></p><a name="levenvoelen-swart"> </a><a name="hclevenvoelen-swart"> </a><a name="levenvoelen-swart-en-US"> </a><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6</code>/38e436bf-6b35-11ec-2213-020000000000</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 364618000}">Pattern of fetal movement</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 289431008}">Fetal movements present</span></p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7.6"/>
+          <value value="38e436bf-6b35-11ec-2213-020000000000"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="364618000"/>
+            <display value="Pattern of fetal movement"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <effectiveDateTime value="2025-02-08"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="289431008"/>
+            <display value="Fetal movements present"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Observation/tobacco-swart"/>
+    <resource>
+      <Observation>
+        <id value="tobacco-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_tobacco-swart"> </a><p class="res-header-id"><b>Generated Narrative: Observation tobacco-swart</b></p><a name="tobacco-swart"> </a><a name="hctobacco-swart"> </a><a name="tobacco-swart-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 365980008}">Finding of tobacco use and exposure (finding)</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 230059006}">Occasional cigarette smoker</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 53661000146106}">Type of tobacco used (observable entity)</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 722499006}">Electronic cigarette user</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 266918002}">Tobacco smoking consumption (observable entity)</span></p><p><b>value</b>: 6 keer per dag inhaleren<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{keer per dag inhaleren} = '{keer per dag inhaleren}')</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="365980008"/>
+            <display value="Finding of tobacco use and exposure (finding)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <effectiveDateTime value="2025-02-08"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="230059006"/>
+            <display value="Occasional cigarette smoker"/>
+          </coding>
+        </valueCodeableConcept>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="53661000146106"/>
+              <display value="Type of tobacco used (observable entity)"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="722499006"/>
+              <display value="Electronic cigarette user"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="266918002"/>
+              <display value="Tobacco smoking consumption (observable entity)"/>
+            </coding>
+          </code>
+          <valueQuantity>
+            <value value="6"/>
+            <unit value="keer per dag inhaleren"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{keer per dag inhaleren}"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Organization/organization-sophia"/>
+    <resource>
+      <Organization>
+        <id value="organization-sophia"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_organization-sophia"> </a><p class="res-header-id"><b>Generated Narrative: Organization organization-sophia</b></p><a name="organization-sophia"> </a><a name="hcorganization-sophia"> </a><a name="organization-sophia-en-US"> </a><p><b>identifier</b>: <code>http://fhir.nl/fhir/NamingSystem/agb-z</code>/06020806</p><p><b>type</b>: <span title="Codes:{urn:oid:2.16.840.1.113883.2.4.6.7 0300}">Medisch specialist</span>, <span title="Codes:{http://nictiz.nl/fhir/NamingSystem/organization-type V5}">Universitair Medisch Centrum</span></p><p><b>name</b>: Erasmus MC, Sophia kinderziekenhuis</p><p><b>telecom</b>: ph: 0107040116, <a href="mailto:info@erasmusmc.nl">info@erasmusmc.nl</a></p><p><b>address</b>: Dr. Molewaterplein 60 ROTTERDAM 3015GJ NL (work)</p></div>
+        </text>
+        <identifier>
+          <system value="http://fhir.nl/fhir/NamingSystem/agb-z"/>
+          <value value="06020806"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="urn:oid:2.16.840.1.113883.2.4.6.7"/>
+            <version value="2.16.840.1.113883.2.4.6.7"/>
+            <code value="0300"/>
+            <display value="Medisch specialist"/>
+          </coding>
+        </type>
+        <type>
+          <coding>
+            <system value="http://nictiz.nl/fhir/NamingSystem/organization-type"/>
+            <code value="V5"/>
+            <display value="Universitair Medisch Centrum"/>
+          </coding>
+        </type>
+        <name value="Erasmus MC, Sophia kinderziekenhuis"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="0107040116"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="info@erasmusmc.nl"/>
+        </telecom>
+        <address>
+          <use value="work"/>
+          <line value="Dr. Molewaterplein 60">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Dr. Molewaterplein"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="60"/>
+            </extension>
+          </line>
+          <city value="ROTTERDAM"/>
+          <postalCode value="3015GJ"/>
+          <country value="NL"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Patient/patient-swart"/>
+    <resource>
+      <Patient>
+        <id value="patient-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-swart"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-swart</b></p><a name="patient-swart"> </a><a name="hcpatient-swart"> </a><a name="patient-swart-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Fiona XXX_Swart Female, DoB: 1985-12-23 ( http://fhir.nl/fhir/NamingSystem/bsn#999901448)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known multipleBirth status of Patient">Multiple Birth:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: 0655223366(Mobile)</li><li>Knolweg 1000 STITSWERD 9999XA NL (home)</li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="http://fhir.nl/fhir/NamingSystem/bsn"/>
+          <value value="999901448"/>
+        </identifier>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+            <valueCode value="NL1"/>
+          </extension>
+          <text value="Fiona XXX_Swart"/>
+          <family value="XXX_Swart">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="XXX_Swart"/>
+            </extension>
+          </family>
+          <given value="Fiona">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+              <valueCode value="BR"/>
+            </extension>
+          </given>
+          <given value="F">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+              <valueCode value="IN"/>
+            </extension>
+          </given>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="0655223366"/>
+          <use value="mobile"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1985-12-23"/>
+        <address>
+          <use value="home"/>
+          <type value="physical"/>
+          <line value="Knolweg 1000">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Knolweg"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="1000"/>
+            </extension>
+          </line>
+          <city value="STITSWERD"/>
+          <postalCode value="9999XA"/>
+          <country value="NL"/>
+        </address>
+        <multipleBirthBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Procedure/sectio-swart"/>
+    <resource>
+      <Procedure>
+        <id value="sectio-swart"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Procedure_sectio-swart"> </a><p class="res-header-id"><b>Generated Narrative: Procedure sectio-swart</b></p><a name="sectio-swart"> </a><a name="hcsectio-swart"> </a><a name="sectio-swart-en-US"> </a><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 386637004}">Obstetric procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 11466000}">Cesarean section</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>performed</b>: 2025-02-10 10:03:00+0200 --&gt; 2025-02-10 11:48:00+0200</p></div>
+        </text>
+        <status value="completed"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="386637004"/>
+            <display value="Obstetric procedure"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="11466000"/>
+            <display value="Cesarean section"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/Patient/patient-swart"/>
+          <display value="Fiona F XXX_Swart"/>
+        </subject>
+        <performedPeriod>
+          <start value="2025-02-10T10:03:00+02:00"/>
+          <end value="2025-02-10T11:48:00+02:00"/>
+        </performedPeriod>
+      </Procedure>
+    </resource>
+  </entry>
+</Bundle>

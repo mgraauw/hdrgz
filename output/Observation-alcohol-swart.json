@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Observation",
+  "id" : "alcohol-swart",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation alcohol-swart</b></p><a name=\"alcohol-swart\"> </a><a name=\"hcalcohol-swart\"> </a><a name=\"alcohol-swart-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 228273003}\">Alcohol drinking behaviour</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>effective</b>: 2025-02-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 105542008}\">Current non-drinker of alcohol</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "228273003",
+      "display" : "Alcohol drinking behaviour"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "effectiveDateTime" : "2025-02-08",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "105542008",
+      "display" : "Current non-drinker of alcohol"
+    }]
+  }
+}

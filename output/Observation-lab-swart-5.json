@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "lab-swart-5",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-swart-5</b></p><a name=\"lab-swart-5\"> </a><a name=\"hclab-swart-5\"> </a><a name=\"lab-swart-5-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93846-4}\">Hemoglobin [Moles/volume] in Venous blood</span></p><p><b>subject</b>: <a href=\"Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart\">Fiona F XXX_Swart</a></p><p><b>value</b>: 7.3 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "93846-4",
+      "display" : "Hemoglobin [Moles/volume] in Venous blood"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://example.org/Patient/patient-swart",
+    "display" : "Fiona F XXX_Swart"
+  },
+  "valueQuantity" : {
+    "value" : 7.3,
+    "unit" : "mmol/L",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/L"
+  }
+}

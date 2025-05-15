@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-swart-6"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-swart-6</b></p><a name="lab-swart-6"> </a><a name="hclab-swart-6"> </a><a name="lab-swart-6-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 29893-5}">HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: <a href="Bundle-bundle-swart.html#http-//example.org/Patient/patient-swart">Fiona F XXX_Swart</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 165815009}">HIV not detected</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29893-5"/>
+      <display value="HIV 1 Ab [Presence] in Serum or Plasma by Immunoassay"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://example.org/Patient/patient-swart"/>
+    <display value="Fiona F XXX_Swart"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="165815009"/>
+      <display value="HIV not detected"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>
